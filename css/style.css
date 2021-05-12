@@ -1,0 +1,24 @@
+.centralizado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralizado-espacado{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.mesma-linha{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}

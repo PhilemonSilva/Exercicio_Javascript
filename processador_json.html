@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/processador_json.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Exercício JS</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Processador de Json
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="calculadora.html">Calculadora</a>
+                        <a class="dropdown-item" href="audio.html">Audio</a>
+                        <a class="dropdown-item" href="requisicoes_http.html">Requisições HTTP</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="formulario">
+        <br>
+        <h1>Saída Processada</h1>
+        <button type="button" class="btn btn-info" onclick="processarContatos()">
+            Processa Lista de Contatos
+        </button>
+        <div id="saida-contatos" class="texto-professora"></div>
+        <br>
+        <h1>Saída JSON</h1>
+        <button type="button" class="btn btn-info" onclick="imprimirJson()">
+            Imprime o Objeto JSON
+        </button>
+        <pre id="saida-json" class="texto-professora"></pre>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="js/processador_json.js"></script>
+</body>
+</html>

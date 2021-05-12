@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icones/css/all.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Exercício JS</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Calculadora
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="audio.html">Audio</a>
+                        <a class="dropdown-item" href="processador_json.html">Processador de Json</a>
+                        <a class="dropdown-item" href="requisicoes_http.html">Requisições HTTP</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="formulario">
+        <br>
+        <div class="mesma-linha">
+            <label for="primeiro-numero">Primeiro Número:</label>
+            <input id="primeiro-numero" class="form-control" type="number" onchange="conferirSeCalculoPossivel()">
+        </div>
+        <br>
+        <div class="mesma-linha">
+            <label for="segundo-numero">Segundo Número:</label>
+            <input id="segundo-numero" class="form-control" type="number" onchange="conferirSeCalculoPossivel()">
+        </div>
+        <br>
+        <div class="btn-group" role="group">
+            <button type="button" class="botao btn btn-info"
+                    disabled onclick="somar()" title="soma">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button type="button" class="botao btn btn-info"
+                    disabled onclick="subtrair()" title="subtração">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="botao btn btn-info"
+                    disabled onclick="multiplicar()" title="multiplicação">
+                <i class="fas fa-times"></i>
+            </button>
+            <button type="button" class="botao btn btn-info"
+                    disabled onclick="dividir()" title="divisão">
+                <i class="fas fa-divide"></i>
+            </button>
+        </div>
+        <br>
+        <div class="mesma-linha">
+            <label for="resultado">Número Resultado:</label>
+            <input id="resultado" class="form-control" type="number" disabled>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="js/calculadora.js"></script>
+</body>
+</html>
